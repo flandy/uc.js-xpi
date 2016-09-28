@@ -15,11 +15,11 @@ if (location == "chrome://mozapps/content/downloads/unknownContentType.xul") {
 // dbclick save or open
 // "radio#open" // "radio#save" // "radio#xThunderRadio" // "radio#turbodta"
 var radios = document.querySelectorAll('radio');
-for(var rad in radios){
-	if(!/^(open|save|xThunderRadio|turbodta)$/i.test(radios[rad].id)){
+for(var rad of radios){
+	if(!/^(?:open|save|xThunderRadio|turbodta)$/i.test(rad.id)){
 		continue;
 	}
-	radios[rad].addEventListener("dblclick", function(event) {
+	rad.addEventListener("dblclick", function(event) {
 		//if(event.target.nodeName === "radio")
 		document.documentElement.getButton("accept").click();
 	}, false);
