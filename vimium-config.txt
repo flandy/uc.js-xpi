@@ -1,0 +1,36 @@
+# Insert your preferred key mappings here.
+unmap <c-e>
+unmap <c-y>
+unmap x
+unmap X
+unmap N
+unmap T
+unmap yy
+unmap gE
+# just map nav
+map i passNextKey
+map I enterInsertMode
+map J scrollPageDown
+map K scrollPageUp
+map H scrollLeft
+map L scrollRight
+map h goBack
+map l goForward
+# just map tabs
+map d removeTab
+map n removeTab
+map u restoreTab
+map gf previousTab
+map T createTab
+map t Vomnibar.activateInNewTab
+map gr Vomnibar.activateEditUrlInNewTab
+map p openCopiedUrlInNewTab
+map P openCopiedUrlInCurrentTab
+map Y copyCurrentUrl
+map b Vomnibar.activateTabSelection
+map gh visitPreviousTab
+map 1b firstTab
+map 99b lastTab
+map Nx performFind
+map Np performBackwardsFind
+map F LinkHints.activateModeToOpenInNewForegroundTab
